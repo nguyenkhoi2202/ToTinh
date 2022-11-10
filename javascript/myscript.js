@@ -131,7 +131,7 @@ getclickf.addEventListener('click', function(){
 		anime({
 			targets: theLetter,
 			rotate: [0,356],
-			duration: 1000
+			duration: 400
 		})
 	});
 	theLetter.addEventListener('click', function(){
@@ -155,7 +155,7 @@ getclickf.addEventListener('click', function(){
 		delay: function(el, i) {
 			return i*100;
 		},
-		duration: 3000,
+		duration: 1300,
 	})
 	theTime2.add({
 		targets: '.parse span',
@@ -165,20 +165,20 @@ getclickf.addEventListener('click', function(){
 		},
 		duration: 250,
 		color: ['#232323','#e22748'],
-		offset: 3000,
+		offset: 1700,
 	});
 	theTime2.add({
 		targets: theLetter,
 		opacity: [0,1],
 		easing: 'easeInOutQuint',
 		offset: "-=400ms",
-		duration: 200,
+		duration: 150,
 		complete: function() {
 			var drag = anime({
 				targets: theLetter,
 				translateY: [-4,4],
 				direction: 'alternate',
-				duration: 600,
+				duration: 300,
 				loop: true
 			})
 		}
